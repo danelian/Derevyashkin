@@ -1,0 +1,51 @@
+/***** FONTS *****/
+@import "fonts";
+
+/***** GENERAL ELEMENTS *****/
+:root {
+  // base
+  --font-family: "DaysOne", sans-serif;
+  --font-daysone: "DaysOne", sans-serif;
+
+  --content-width: 1160px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --white-color: #ffffff;
+  --black-color: #131313;
+  --font-color: #131313;
+
+  // --global-color: #E88320;
+  // --green-color: #8BD27C;
+  // --red-color: #FF3D00;
+
+  --grey-color: #E5E5E5;
+
+  --border-radius: 15px;
+}
+
+/***** Mixins *****/
+@mixin desktop {
+  @media screen and (max-width: 1190px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media screen and (max-width: 576px) {
+    @content;
+  }
+}
+
+
+/***** BLOCKS GLOBAL *****/
+@import "general";
+
+/***** COMPONENTS GLOBAL *****/
+
+/***** SECTIONS GLOBAL (Widgets) *****/
