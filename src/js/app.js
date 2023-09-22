@@ -28,5 +28,17 @@ $(document).ready(function () {
 	  }
 	});
 
+	// ------------------------- SWIPER ------------------------
+	// HERO SWIPER
+	var swiper = new Swiper(".heroSwiper", {
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		  },
+		pagination: {
+		  el: ".swiper-pagination",
+		},
+	  });
+
 	
 });

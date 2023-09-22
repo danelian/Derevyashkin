@@ -1,3 +1,27 @@
+.btn-main {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 15px 36px;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 1.2;
+	text-decoration: none;
+	text-align: center;
+	color: var(--white-color);
+	min-height: 50px;
+	border-radius: 100px;
+	border: 1px solid transparent;
+	outline: none;
+	background: var(--green-gradient);
+	&:hover {
+		color: var(--global-color);
+		border-color: var(--global-color);
+		background: none;
+	}
+}
+
 .btn-icon-grey {
   display: inline-flex;
 	align-items: center;
@@ -12,5 +36,58 @@
 	img {
 		width: 18px;
 		height: 18px;
+	}
+}
+
+.btn-document {
+	display: inline-flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 7px 20px;
+	min-height: 46px;
+	color: var(--white-color);
+	border-radius: 100px;
+	background-color: var(--global-color);
+}
+.btn-document-outline {
+	display: inline-flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 7px 20px;
+	min-height: 46px;
+	color: var(--white-color);
+	border-radius: 100px;
+	border: 1px solid var(--white-color);
+	background-color: transparent;
+}
+.btn-document,
+.btn-document-outline {
+	img {
+		width: 28px;
+		height: 28px;
+		margin-right: 2px;
+		flex-shrink: 0;
+	}
+	&-filesize {
+		margin-right: 10px;
+		flex-shrink: 0;
+		font-size: 10px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 1.2;
+		color: var(--white-color);
+		span {
+			display: block;
+		}
+	}
+	&-filename {
+		max-width: 96px;
+		font-size: 13px;
+		font-weight: 600;
+		line-height: 1.2;
+		color: var(--white-color);
+	}
+	&:hover {
+		opacity: .7;
 	}
 }

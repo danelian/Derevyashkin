@@ -23,7 +23,7 @@
   // --green-color: #8BD27C;
   // --red-color: #FF3D00;
 
-  --grey-color: #E5E5E5;
+  --grey-color: #dcdcdc;
 }
 
 /***** Mixins *****/
@@ -51,6 +51,8 @@
 /***** COMPONENTS GLOBAL *****/
 @import "blocks/buttons.scss";
 @import "blocks/components.scss";
+@import "blocks/sliders.scss";
+@import "blocks/form.scss";
 
 /***** SECTIONS GLOBAL (Widgets) *****/
 @import "widgets/hero.scss";
