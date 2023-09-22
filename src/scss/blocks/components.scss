@@ -1,0 +1,28 @@
+.socials {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	li {
+		margin-top: 4px;
+		margin-bottom: 4px;
+		&:not(:last-child) {
+			margin-right: 10px;
+		}
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-shrink: 0;
+			width: 32px;
+			height: 32px;
+			transition: transform .3s ease;
+			&:hover {
+				transform: scale(1.05);
+			}
+		}
+	}
+}

@@ -8,7 +8,7 @@
   --font-daysone: "DaysOne", sans-serif;
 
   --content-width: 1320px;
-  --container-offset: 15px;
+  --container-offset: 16px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   // colors
@@ -46,7 +46,11 @@
 
 /***** BLOCKS GLOBAL *****/
 @import "general";
+@import "blocks/header.scss";
 
 /***** COMPONENTS GLOBAL *****/
+@import "blocks/buttons.scss";
+@import "blocks/components.scss";
 
 /***** SECTIONS GLOBAL (Widgets) *****/
+@import "widgets/hero.scss";

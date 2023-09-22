@@ -1,0 +1,16 @@
+.btn-icon-grey {
+  display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;margin: 0;
+	border: 0;outline: none;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	background-color: var(--white-color);
+	cursor: pointer;
+	img {
+		width: 18px;
+		height: 18px;
+	}
+}
