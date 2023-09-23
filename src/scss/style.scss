@@ -51,8 +51,14 @@
 /***** COMPONENTS GLOBAL *****/
 @import "blocks/buttons.scss";
 @import "blocks/components.scss";
+@import "blocks/title.scss";
 @import "blocks/sliders.scss";
 @import "blocks/form.scss";
+@import "blocks/cards.scss";
 
 /***** SECTIONS GLOBAL (Widgets) *****/
 @import "widgets/hero.scss";
+@import "widgets/benefits.scss";
+@import "widgets/products.scss";
+@import "widgets/special.scss";
+@import "widgets/services.scss";

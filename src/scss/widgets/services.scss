@@ -1,0 +1,58 @@
+.services {
+  &bl {
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 10%;
+			width: 170px;
+			height: 210px;
+			background-image: url('../img/servicesbl_decor_img.jpg');
+			z-index: -1;
+		}
+		.heading {
+			.section-title {
+				text-align: left;
+			}
+			.section-text {
+				font-size: 17px;
+				text-align: left;
+			}
+		}
+		&__container {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+			width: 100%;
+			max-width: 1100px;
+			.col {
+				&:nth-child(1) {
+					padding-top: 60px;
+					width: calc(40% - 15px);
+				}
+				&:nth-child(2) {
+					width: calc(60% - 15px);
+				}
+			}
+		}
+		&__cards {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 28px 20px;
+			.servicecard {
+				padding: 28px 32px;
+				width: 100%;
+				min-height: 180px;
+				&-title {
+					max-width: 230px;
+					font-size: 20px;
+					color: var(--brown-color);
+				}
+			}
+		}
+		.link-center {
+			justify-content: flex-start;
+		}
+	}
+}

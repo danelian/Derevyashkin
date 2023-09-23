@@ -1,0 +1,33 @@
+.section-title {
+	margin-top: 0;
+	margin-bottom: 0;
+  font-family: var(--font-daysone);
+	font-size: 35px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.2;
+	text-transform: uppercase;
+	color: var(--brown-color);
+}
+.section-text {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.2;
+	&:not(:last-child) {
+		margin-bottom: 0.8rem;
+	}
+}
+
+.heading {
+	margin-bottom: 60px;
+	.section-title,
+	.section-text {
+		text-align: center;
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+}

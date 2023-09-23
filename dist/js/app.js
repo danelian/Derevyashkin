@@ -22,9 +22,11 @@ $(document).ready(function () {
 	  if (navMenu.classList.contains('show')) { // если меню открыто
 		navToggle.querySelector('img').src = 'img/icon_menu_close.svg'; // меняем src у картинки на иконку закрытия
 		headerLogo.src = 'img/logo_black.svg';
+		document.querySelector('body').style = "overflow-y: hidden; height: 100vh;";
 	  } else { // если меню закрыто
 		navToggle.querySelector('img').src = 'img/icon_menu_burger.svg'; // меняем src у картинки на иконку бургер-меню
 		headerLogo.src = 'img/logo_white.svg';
+		document.querySelector('body').style = "overflow-y: auto; height: auto;";
 	  }
 	});
 
