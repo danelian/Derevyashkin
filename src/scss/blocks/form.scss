@@ -65,21 +65,22 @@
 		max-width: 100%;
 		width: 100%;
 		min-height: 50px;
-		max-height: 500px;
-		height: 100px;
+		max-height: 400px;
+		height: 92px;
 		padding: 15px 20px;
+		font-size: 14px;
+		font-style: normal;
 		font-weight: 400;
-		font-size: 17px;
-		line-height: 20px;
+		line-height: 1.2;
 		color: var(--font-color);
 		box-sizing: border-box;
-		border-radius: 10px;
-		border: 0;
+		border-radius: 20px;
 		outline: none;
-		background: #ffffff;
+		border: 1px solid var(--grey-color);
+		background: transparent;
 		transition: .3s ease;
 		&::placeholder {
-			color: #b1b1b1;
+			color: var(--grey-color);
 		}
 	}
 	.accept {

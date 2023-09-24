@@ -7,27 +7,20 @@ ymaps.ready(function () {
   }),
 
     // Создаём макет содержимого.
-    MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-      '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-    ),
+    // MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+    //   '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+    // ),
 
     myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
       hintContent: '',
       balloonContent: ''
     }, {
-      // Опции.
-      // Необходимо указать данный тип макета.
       iconLayout: 'default#image',
-      // Своё изображение иконки метки.
       iconImageHref: 'img/placemark.svg',
-      // Размеры метки.
-      iconImageSize: [92, 92],
-      // Смещение левого верхнего угла иконки относительно
-      // её "ножки" (точки привязки).
-      iconImageOffset: [-5, -46]
+      iconImageSize: [164, 46],
+      iconImageOffset: [-5, -23]
     });
 
   myMap.geoObjects
-    .add(myPlacemark)
-    .add(myPlacemarkWithContent);
+    .add(myPlacemark);
 });

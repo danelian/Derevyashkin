@@ -1,0 +1,42 @@
+.cta {
+  &__wrapper {
+    display: flex;
+    padding: 68px;
+    width: 100%;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .heading {
+      margin-bottom: 32px;
+    }
+    .section-title,
+    .section-text {
+      text-align: left;
+      color: var(--white-color);
+    }
+  }
+  .form {
+    max-width: 700px;
+    .form-group {
+      &:nth-child(1) {
+        width: 100%;
+      }
+      &:nth-child(2),
+      &:nth-child(3) {
+        width: calc(50% - 120px);
+        margin-right: 20px;
+      }
+    }
+    .form-input,
+    textarea {
+      color: var(--white-color);
+      background: rgba(255, 255, 255, 0.20);
+    }
+    .btn-main {
+      width: 200px;
+      &:hover {
+        background-color: var(--white-color);
+      }
+    }
+  }
+}

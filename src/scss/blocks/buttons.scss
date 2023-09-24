@@ -35,6 +35,43 @@
 		transition: transform .3s ease;
 	}
 }
+.link-green {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	width: fit-content;
+	padding: 0 40px 0 0;margin: 0;
+	font-family: var(--font-daysone);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1;
+	letter-spacing: 2%;
+	color: var(--global-color);
+	border: 0;outline: none;
+	background-color: transparent;
+	&:hover {
+		color: var(--global-color);
+		&:before {
+			transform: translateX(3px);
+		}
+	}
+	&:before {
+		content: '';
+		position: absolute;
+		right: 0;
+		top: 50%;
+		margin-top: -14px;
+		width: 28px;
+		height: 28px;
+		background-image: url('../img/icon_arrow_link_green.svg');
+		background-size: contain;
+		background-repeat: no-repeat;
+		z-index: 2;
+		transition: transform .3s ease;
+	}
+}
 
 .btn-main {
 	display: inline-flex;

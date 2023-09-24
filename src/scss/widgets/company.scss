@@ -1,0 +1,48 @@
+.company {
+  &bl {
+    position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			right: 0;
+			bottom: 5%;
+			width: 505px;
+			height: 323px;
+			background-image: url('../img/companybl_decor_img.png');
+			z-index: 0;
+		}
+    &__wrapper {
+      margin: 0 auto;
+      padding: 48px 48px 80px 84px;
+      max-width: 1100px;
+      border-radius: 20px;
+      border: 1px dashed rgba(0, 0, 0, 0.3);
+    }
+    .heading {
+      margin-bottom: 44px;
+    }
+    &__container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      width: 100%;
+      .col {
+        p {
+          font-size: 16px;
+        }
+        &:nth-child(1) {
+          width: 50%;
+          p:nth-child(1) {
+            margin-top: 0;
+          }
+          .link-green {
+            margin-top: 20px;
+          }
+        }
+        &:nth-child(2) {
+          width: 38%;
+        }
+      }
+    }
+  }
+}

@@ -47,6 +47,7 @@
 /***** BLOCKS GLOBAL *****/
 @import "general";
 @import "blocks/header.scss";
+@import "blocks/footer.scss";
 
 /***** COMPONENTS GLOBAL *****/
 @import "blocks/buttons.scss";
@@ -62,3 +63,6 @@
 @import "widgets/products.scss";
 @import "widgets/special.scss";
 @import "widgets/services.scss";
+@import "widgets/company.scss";
+@import "widgets/contacts.scss";
+@import "widgets/cta.scss";
