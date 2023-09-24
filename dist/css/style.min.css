@@ -1548,6 +1548,57 @@ th {
   transform: scale(1.1);
 }
 
+/*-----breadcrumbs-----*/
+.kama_breadcrumbs {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0 auto 30px auto;
+  padding: 20px var(--container-offset);
+  max-width: var(--container-width);
+  font-size: 13px;
+  line-height: 16px;
+  color: rgba(19, 19, 19, 0.5);
+}
+.kama_breadcrumbs span {
+  font-weight: 700;
+  line-height: 16px;
+}
+.kama_breadcrumbs a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgba(19, 19, 19, 0.5);
+  transition: color 0.3s ease-in;
+}
+.kama_breadcrumbs a:hover {
+  color: var(--global-color);
+}
+.kama_breadcrumbs a:hover img {
+  opacity: 1;
+}
+.kama_breadcrumbs a img {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+.kama_breadcrumbs .kb_sep {
+  display: inline-flex;
+  vertical-align: middle;
+  margin: 0 8px;
+}
+.kama_breadcrumbs .kb_sep img {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  opacity: 0.5;
+}
+
 /***** SECTIONS GLOBAL (Widgets) *****/
 .hero {
   position: relative;
