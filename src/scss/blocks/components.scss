@@ -35,7 +35,17 @@
 	width: fit-content;
 	padding: 16px 44px;
 	border-radius: 20px;
+	// border: 1px solid transparent;
+	overflow: hidden;
 	background: var(--green-gradient);
+	transition: all .3s ease;
+	// &:hover {
+	// 	border-color: var(--global-color);
+	// 	background: var(--white-color);
+	// 	&::before, &::after {
+	// 		border-color: var(--global-color);
+	// 	}
+	// }
 	&::before,
 	&::after {
 		content: '';
@@ -45,6 +55,7 @@
 		width: 24px;
 		height: 24px;
 		border-radius: 50px;
+		// border: 1px solid var(--white-color);
 		background: var(--white-color);
 	}
 	&::before {
@@ -68,8 +79,9 @@
 		color: var(--white-color);
 		transition: opacity .3s ease;
 		&:hover {
+			text-decoration: underline;
 			color: var(--white-color);
-			opacity: .7;
+			opacity: .9;
 		}
 	}
 }

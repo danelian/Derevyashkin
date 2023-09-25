@@ -1,0 +1,33 @@
+.gallery {
+  &Swiper {
+    overflow: visible;
+    .swiper-slide {
+      width: 420px;
+      border-radius: 10px;
+      img {
+        width: 100%;
+        aspect-ratio: 42 / 50;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+    }
+    .swiper-nav {
+      position: absolute;
+      gap: 20px;
+      bottom: 30px;
+      left: 30px;
+      z-index: 10;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      width: 36px;
+      height: 36px;
+    }
+    .swiper-button-prev::after {
+      background-image: url('../img/icon_arrow_prev_white.svg');
+    }
+    .swiper-button-next::after {
+      background-image: url('../img/icon_arrow_next_white.svg');
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.video-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: auto;
+  width: 880px;
+  aspect-ratio: 88 / 47;
+  img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 88 / 47;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 70px;
+    height: 70px;
+    background-image: url('../img/icon_play.svg');
+    z-index: 2;
+  }
+}

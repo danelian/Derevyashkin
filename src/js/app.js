@@ -36,11 +36,20 @@ $(document).ready(function () {
 		navigation: {
 			nextEl: ".swiper-button-next",
 			prevEl: ".swiper-button-prev",
-		  },
+		},
 		pagination: {
 		  el: ".swiper-pagination",
 		},
-	  });
+	});
+	// GALLERY SWIPER
+	var swiper = new Swiper(".gallerySwiper", {
+		slidesPerView: "auto",
+		spaceBetween: 20,
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+	});
 
 	
 });

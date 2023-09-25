@@ -39,4 +39,32 @@
       }
     }
   }
+  &-second {
+    .cta__wrapper {
+      padding-top: 36px;
+      padding-bottom: 28px;
+    }
+    .cta__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+      .heading {
+        margin-right: 24px;
+        max-width: 440px;
+        .section-title {
+          font-size: 32px;
+        }
+      }
+    }
+    .form {
+      .form-group {
+        &:nth-child(1) {
+          width: 300px;
+          margin-right: 12px;
+        }
+      }
+    }
+  }
 }
