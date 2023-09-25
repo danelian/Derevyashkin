@@ -152,6 +152,10 @@
 		flex-direction: column;
 		justify-content: space-between;
 		height: 100%;
+		min-height: 208px;
+	}
+	&-content {
+		margin-bottom: 12px;
 	}
 	&-title {
 		margin-top: 0;
@@ -161,7 +165,7 @@
 		font-style: normal;
 		font-weight: 400;
 		line-height: 1.2;
-		color: var(--global-color);
+		color: var(--brown-color);
 	}
 	&-text {
 		margin-top: 0;
@@ -172,54 +176,62 @@
 		line-height: 1.2;
 		color: var(--brown-color);
 	}
-
+	&-price {
+		margin-top: 8px;
+		margin-bottom: 0;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 1.2;
+		color: var(--global-color);
+	}
 	&-img {
 		position: absolute;
 		bottom: 0;
 		right: 0;
 		max-width: 55%;
-		max-height: 100%;
+		max-height: 90%;
 		border-bottom-right-radius: 15px;
 		z-index: -1;
 	}
-	// &-btn {
-	// 	display: inline-flex;
-	// 	align-items: center;
-	// 	justify-content: center;
-	// 	position: relative;
-	// 	width: fit-content;
-	// 	padding: 7px 38px 7px 14px;
-	// 	font-family: var(--font-daysone);
-	// 	font-size: 13px;
-	// 	font-style: normal;
-	// 	font-weight: 600;
-	// 	line-height: 1;
-	// 	letter-spacing: 2%;
-	// 	color: var(--brown-color);
-	// 	border: 1px solid var(--brown-color);
-	// 	border-radius: 50px;
-	// 	background-color: transparent;
-	// 	&:hover {
-	// 		color: var(--brown-color);
-	// 		&:before {
-	// 			transform: translateX(3px);
-	// 		}
-	// 	}
-	// 	&:before {
-	// 		content: '';
-	// 		position: absolute;
-	// 		right: 14px;
-	// 		top: 50%;
-	// 		margin-top: -8px;
-	// 		width: 16px;
-	// 		height: 16px;
-	// 		background-image: url('../img/icon_arrow_link.svg');
-	// 		background-size: contain;
-	// 		background-repeat: no-repeat;
-	// 		z-index: 2;
-	// 		transition: transform .3s ease;
-	// 	}
-	// }
+	&-btn {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		width: fit-content;
+		min-height: 40px;
+		padding: 7px 52px 7px 18px;
+		font-family: var(--font-daysone);
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 1;
+		letter-spacing: 2%;
+		color: var(--brown-color);
+		border: 1px solid var(--brown-color);
+		border-radius: 50px;
+		background-color: transparent;
+		&:hover {
+			color: var(--brown-color);
+			&:before {
+				transform: translateX(3px);
+			}
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			right: 18px;
+			top: 50%;
+			margin-top: -10px;
+			width: 20px;
+			height: 20px;
+			background-image: url('../img/icon_arrow_link.svg');
+			background-size: contain;
+			background-repeat: no-repeat;
+			z-index: 2;
+			transition: transform .3s ease;
+		}
+	}
 	&-btn-icon {
 		flex-shrink: 0;
 		width: 30px;

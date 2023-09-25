@@ -1,4 +1,65 @@
 .services {
+	&__wrapper {
+		position: relative;
+		padding: 76px 88px;
+		border-radius: 20px;
+		border: 1px dashed rgba(0, 0, 0, 0.3);
+		&::before {
+			content: '';
+			position: absolute;
+			right: 100px;
+			top: -40px;
+			width: 200px;
+			height: 200px;
+			background-image: url('../img/services_decor_img.png');
+			z-index: 1;
+		}
+	}
+	&__group {
+		&:not(:last-child) {
+			padding-bottom: 60px;
+			margin-bottom: 60px;
+			border-bottom: 1px dashed rgba(0, 0, 0, 0.3);
+		}
+	}
+	&__heading {
+		max-width: 490px;
+		&:not(:last-child) {
+			margin-bottom: 60px;
+		}
+		h2 {
+			margin-top: 0;
+			margin-bottom: 0;
+			font-family: var(--font-daysone);
+			font-size: 32px;
+			font-weight: 400;
+			line-height: 1.2;
+			color: var(--brown-color);
+			&:not(:last-child) {
+				margin-bottom: 14px;
+			}
+		}
+		p {
+			margin-top: 0;
+			margin-bottom: 0;
+			font-size: 20px;
+			font-weight: 500;
+			line-height: 1.2;
+			color: var(--font-color);
+			&:not(:last-child) {
+				margin-bottom: 14px;
+			}
+		}
+	}
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 60px;
+		.services__heading {
+			margin-top: auto;
+			margin-bottom: auto;
+		}
+	}
   &bl {
 		position: relative;
 		&::before {
@@ -43,7 +104,9 @@
 			.servicecard {
 				padding: 28px 32px;
 				width: 100%;
-				min-height: 180px;
+				&-info {
+					min-height: 124px;
+				}
 				&-title {
 					max-width: 230px;
 					font-size: 20px;
