@@ -2433,3 +2433,51 @@ th {
 .gallerySwiper .swiper-button-next::after {
   background-image: url("../img/icon_arrow_next_white.svg");
 }
+.gallery__item:not(:last-child) {
+  margin-bottom: 100px;
+}
+.gallery-title {
+  margin-top: 0;
+  margin-bottom: 28px;
+  font-family: var(--font-daysone);
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--brown-color);
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 240px 240px;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+}
+.gallery-grid .one {
+  grid-area: one;
+}
+.gallery-grid .two {
+  grid-area: two;
+}
+.gallery-grid .three {
+  grid-area: three;
+}
+.gallery-grid .four {
+  grid-area: four;
+}
+.gallery-grid .five {
+  grid-area: five;
+}
+.gallery-grid img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.gallery-grid--first {
+  grid-template-areas: "one two three" "one four five";
+}
+.gallery-grid--second {
+  grid-template-areas: "one two five" "three four five";
+}

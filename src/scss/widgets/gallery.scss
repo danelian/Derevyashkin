@@ -30,4 +30,46 @@
       background-image: url('../img/icon_arrow_next_white.svg');
     }
   }
+  &__item:not(:last-child) {
+    margin-bottom: 100px;
+  }
+  &-title {
+    margin-top: 0;
+    margin-bottom: 28px;
+    font-family: var(--font-daysone);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--brown-color);
+  }
+  &-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 240px 240px;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    .one { grid-area: one; }
+    .two { grid-area: two; }
+    .three { grid-area: three; }
+    .four { grid-area: four; }
+    .five { grid-area: five; }
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      object-fit: cover;
+    }
+    &--first {
+      grid-template-areas:
+      "one two three"
+      "one four five";
+    }
+    &--second {
+      grid-template-areas:
+      "one two five"
+      "three four five";
+    }
+  }
 }
