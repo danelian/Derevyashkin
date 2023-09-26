@@ -33,15 +33,11 @@
   &__item:not(:last-child) {
     margin-bottom: 100px;
   }
-  &-title {
-    margin-top: 0;
+  .heading {
     margin-bottom: 28px;
-    font-family: var(--font-daysone);
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 1.2;
-    text-transform: uppercase;
-    color: var(--brown-color);
+    .section-title {
+      text-align: left;
+    }
   }
   &-grid {
     display: grid;
