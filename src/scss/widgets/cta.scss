@@ -8,6 +8,7 @@
     background-size: cover;
     .heading {
       margin-bottom: 32px;
+      .section-title {text-transform: none;}
     }
     .section-title,
     .section-text {
@@ -55,6 +56,7 @@
         max-width: 440px;
         .section-title {
           font-size: 32px;
+          text-transform: none;
         }
       }
     }

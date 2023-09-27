@@ -1671,6 +1671,87 @@ th {
   opacity: 0.5;
 }
 
+.table {
+  width: 100%;
+  border: none;
+  border-collapse: separate;
+}
+.table:not(:last-child) {
+  margin-bottom: 20px;
+}
+.table .d-block {
+  display: block;
+}
+.table .row {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.table .row .col {
+  width: 100%;
+  text-align: center;
+}
+.table .row .col:not(:first-child) {
+  margin-left: 12px;
+}
+.table .row .col:not(:last-child) {
+  margin-right: 12px;
+}
+.table thead th {
+  font-weight: bold;
+  text-align: left;
+  border: none;
+  padding: 18px 16px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+  color: var(--white-color);
+  background: var(--global-color);
+  border-top: 1px solid #E4E4EF;
+  border-right: 1px solid #E4E4EF;
+}
+.table thead th .row {
+  margin-top: 8px;
+  font-size: 15px;
+}
+.table thead th:nth-child(1) {
+  border-left: 1px solid #E4E4EF;
+}
+.table thead tr th:first-child {
+  border-radius: 20px 0 0 0;
+}
+.table thead tr th:last-child {
+  border-radius: 0 20px 0 0;
+}
+.table tbody td {
+  text-align: left;
+  border: none;
+  vertical-align: middle;
+  padding: 18px 16px;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.1;
+  text-align: center;
+  color: var(--font-color);
+  border-right: 1px solid #E4E4EF;
+  border-bottom: 1px solid #E4E4EF;
+}
+.table tbody tr td:nth-child(1) {
+  border-left: 1px solid #E4E4EF;
+}
+.table tbody tr:nth-child(even) {
+  background: rgba(47, 141, 55, 0.1);
+}
+.table tbody tr:last-child td:first-child {
+  border-radius: 0 0 0 20px;
+}
+.table tbody tr:last-child td:last-child {
+  border-radius: 0 0 20px 0;
+}
+
 /***** SECTIONS GLOBAL (Widgets) *****/
 .hero {
   position: relative;
@@ -2185,6 +2266,9 @@ th {
 .cta__wrapper .heading {
   margin-bottom: 32px;
 }
+.cta__wrapper .heading .section-title {
+  text-transform: none;
+}
 .cta__wrapper .section-title,
 .cta__wrapper .section-text {
   text-align: left;
@@ -2228,6 +2312,7 @@ th {
 }
 .cta-second .cta__content .heading .section-title {
   font-size: 32px;
+  text-transform: none;
 }
 .cta-second .form .form-group:nth-child(1) {
   width: 300px;
@@ -2515,4 +2600,232 @@ th {
 }
 .discountcard:hover img {
   transform: scale(1.05);
+}
+
+.prodhead__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 56px 52px;
+  width: 100%;
+  min-height: 220px;
+  border-radius: 20px;
+}
+.prodhead__wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: linear-gradient(102deg, #543C30 -42%, rgba(84, 60, 48, 0) 63%);
+  z-index: -1;
+}
+.prodhead__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  z-index: -2;
+}
+.prodhead .heading {
+  text-align: left;
+  margin-bottom: 0;
+}
+.prodhead .heading .section-title {
+  font-size: 42px;
+  text-align: left;
+  color: var(--white-color);
+}
+.prodhead .heading .section-text {
+  max-width: 430px;
+  font-size: 17px;
+  text-align: left;
+  color: var(--white-color);
+}
+
+.prodprices__item {
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.prodprices__item:not(:last-child) {
+  padding-bottom: 68px;
+  margin-bottom: 68px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.3);
+}
+.prodprices__info {
+  margin-top: 30px;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--font-color);
+}
+.prodprices__info p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.prodprices__info p:not(:last-child) {
+  margin-bottom: 0.8rem;
+}
+.prodprices__wrapper {
+  position: relative;
+  padding: 48px 88px;
+  border-radius: 20px;
+  border: 1px dashed rgba(0, 0, 0, 0.3);
+}
+.prodprices__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.prodprices__row:not(:last-child) {
+  padding-bottom: 48px;
+  margin-bottom: 48px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.3);
+}
+.prodprices__content {
+  width: calc(50% - 14px);
+}
+.prodprices__content h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-family: var(--font-daysone);
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--brown-color);
+}
+.prodprices__content p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--font-color);
+}
+.prodprices__image {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: calc(50% - 14px);
+}
+.prodprices__image img {
+  max-width: 400px;
+  margin-left: auto;
+}
+.prodprices__image .prodprices__tags {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  max-width: calc(100% - 40px);
+}
+.prodprices__tags {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.prodprices-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  padding: 12px 26px;
+  width: fit-content;
+  font-family: var(--font-daysone);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--white-color);
+  border-radius: 50px;
+  background: var(--green-gradient);
+}
+.prodprices .benefits__grid {
+  margin-bottom: 60px;
+}
+.prodprices__third {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.prodprices__third .prodprices__content {
+  width: calc(100% - 500px);
+}
+.prodprices__third .prodprices__content h2 {
+  font-size: 52px;
+}
+.prodprices__third .prodprices__content p {
+  font-size: 28px;
+}
+.prodprices__third .prodprices__content .tick {
+  margin-top: 76px;
+}
+.prodprices__third .prodprices__image {
+  width: 460px;
+}
+.prodprices__third .prodprices__image img {
+  max-width: 430px;
+  border-radius: 10px;
+}
+.prodprices__third .prodprices__image .prodprices__tags {
+  top: 36px;
+  left: 0;
+}
+
+.swiper-slide .prod-tag {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  max-width: calc(100% - 60px);
+}
+
+.prod-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 12px 24px;
+  width: fit-content;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--brown-color);
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.prodcontent h3 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 0;
+  margin-bottom: 24px;
+  padding: 16px 36px;
+  width: fit-content;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--white-color);
+  border-radius: 50px;
+  background: var(--green-gradient);
+}
+.prodcontent h3:not(:first-child) {
+  margin-top: 24px;
+}
+.prodcontent p {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--font-color);
 }
