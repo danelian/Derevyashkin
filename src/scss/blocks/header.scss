@@ -182,12 +182,23 @@
 					}
 				}
 			}
+			.hero__btns {
+				margin-bottom: 28px;
+			}
+			.btn-document-outline {
+				color: var(--global-color);
+				border-color: var(--global-color);
+				.btn-document-filesize,
+				.btn-document-filename {
+					color: var(--global-color);
+				}
+			}
 		}
 		&__list {
 			display: flex;
 			flex-direction: column;
 			list-style: none;
-			padding: 0;margin: 0;
+			padding: 0;margin: 0 0 20px 0;
 			li {
 				padding: 15px 0;
 				border-bottom: 1px dashed rgba(84, 60, 48, 0.4);
