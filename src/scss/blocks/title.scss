@@ -31,3 +31,27 @@
 		}
 	}
 }
+
+@include tablet {
+	.section-title {
+		font-size: 28px;
+	}
+	.section-text {
+		font-size: 17px;
+	}
+	.heading {
+		margin-bottom: 32px;
+	}
+}
+
+@include tablet {
+	.section-title {
+		font-size: 22px;
+	}
+	.section-text {
+		font-size: 15px;
+	}
+	.heading {
+		margin-bottom: 24px;
+	}
+}
