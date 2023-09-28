@@ -28,6 +28,20 @@ section {
 	padding: 0 var(--container-offset);
 	max-width: var(--container-width);
 }
+.fixed-buttons {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;
+	position: fixed;
+	bottom: 16px;
+	right: 16px;
+	.btn-icon {
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+}
 .link-center {
 	display: flex;
 	align-items: center;

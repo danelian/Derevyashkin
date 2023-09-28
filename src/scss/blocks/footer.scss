@@ -303,11 +303,15 @@
       }
     }
     &__bottom {
+      text-align: center;
       align-items: center;
       justify-content: center;
       .footer__nav-second {
         margin-right: 0;
         margin-bottom: 24px;
+      }
+      a, p {
+        text-align: center;
       }
     }
   }

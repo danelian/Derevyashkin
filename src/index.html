@@ -27,10 +27,30 @@
 
 	</main>
 
+	<div class="fixed-buttons">
+		<a href="#" class="btn-icon"><img src="img/icon_mail.svg" alt=""></a>
+		<button onclick="topFunction()" id="myBtn" class="btn-icon" style="display: none;"><img src="img/icon_arrow_up.svg" alt=""></button>
+	</div>
+
 	@@include('template/footer.html')
 	@@include('template/modals.html')
 
 	@@include('template/scripts.html')
+
+	<script>
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+			if (document.body.scrollTop > 1500 || document.documentElement.scrollTop > 1500) {
+				document.getElementById("myBtn").style.display = "block";
+			} else {
+				document.getElementById("myBtn").style.display = "none";
+			}
+		}
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
 
 </body>
 

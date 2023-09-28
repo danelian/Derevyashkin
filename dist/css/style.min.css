@@ -88,6 +88,19 @@ section {
   max-width: var(--container-width);
 }
 
+.fixed-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+}
+.fixed-buttons .btn-icon:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 .link-center {
   display: flex;
   align-items: center;
@@ -899,12 +912,16 @@ th {
     text-align: center;
   }
   .footer__bottom {
+    text-align: center;
     align-items: center;
     justify-content: center;
   }
   .footer__bottom .footer__nav-second {
     margin-right: 0;
     margin-bottom: 24px;
+  }
+  .footer__bottom a, .footer__bottom p {
+    text-align: center;
   }
 }
 /***** COMPONENTS GLOBAL *****/
@@ -1057,6 +1074,25 @@ th {
   height: 18px;
 }
 
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--green-gradient);
+  cursor: pointer;
+}
+.btn-icon img {
+  width: 20px;
+  height: 20px;
+}
+
 .btn-document {
   display: inline-flex;
   align-items: center;
@@ -1125,6 +1161,20 @@ th {
     margin-top: -10px;
     width: 20px;
     height: 20px;
+  }
+  .btn-document img,
+.btn-document-outline img {
+    width: 24px;
+    height: 24px;
+  }
+  .btn-document-filesize,
+.btn-document-outline-filesize {
+    margin-right: 7px;
+  }
+  .btn-document-filename,
+.btn-document-outline-filename {
+    max-width: 96px;
+    font-size: 11px;
   }
 }
 .socials {
@@ -2109,7 +2159,6 @@ th {
   margin-bottom: 32px;
 }
 .modals .section-text {
-  max-width: 360px;
   text-align: left;
   color: var(--white-color);
 }
