@@ -70,3 +70,72 @@
     }
   }
 }
+
+@include desktop {
+  .cta {
+    &__wrapper,
+    &-second .cta__wrapper {
+      padding: 68px 32px;
+    }
+  }
+}
+
+@include tablet-small {
+  .cta {
+    &__wrapper {
+      width: calc(100% + 32px);
+      margin-left: -16px;
+      margin-right: -16px;
+      .heading {
+        margin-bottom: 44px;
+      }
+      .section-title,
+      .section-text {
+        text-align: center;
+      }
+    }
+    &__content {
+      width: 100%;
+      .heading {
+        .section-title {
+          font-size: 24px;
+        }
+      }
+    }
+    .form {
+      max-width: 100%;
+      flex-direction: column;
+      .form-group {
+        &:nth-child(2),
+        &:nth-child(3) {
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+      .btn-main {
+        width: 100%;
+      }
+    }
+    &-second {
+      .cta__content {
+        width: 100%;
+        .heading {
+          margin-right: 0;
+          max-width: 100%;
+          .section-title {
+            font-size: 24px;
+          }
+        }
+      }
+      .form {
+        width: 100%;
+        .form-group {
+          &:nth-child(1) {
+            width: 100%;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
