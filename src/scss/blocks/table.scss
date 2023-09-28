@@ -86,3 +86,48 @@
     }
   }
 }
+
+@include tablet-small {
+  .table {
+    .row {
+      .col {
+        &:not(:first-child) {
+          margin-left: 8px;
+        }
+        &:not(:last-child) {
+          margin-right: 8px;
+        }
+      }
+    }
+    thead { 
+      th {
+        padding: 8px 10px;
+        font-size: 11px;
+        .row {
+          margin-top: 4px;
+          font-size: 8px;
+        }
+      }
+      tr th { 
+        &:first-child {
+          border-radius: 10px 0 0 0;
+        }
+        &:last-child {
+          border-radius: 0 10px 0 0;
+        }
+      }
+    }
+    tbody { 
+      td {
+        padding: 8px 10px;
+        font-size: 11px;
+      }
+      tr {
+        &:last-child td {
+          &:first-child {border-radius: 0 0 0 10px;}
+          &:last-child {border-radius: 0 0 10px 0;}
+        }
+      }
+    }
+  }  
+}
