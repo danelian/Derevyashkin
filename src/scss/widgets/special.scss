@@ -56,3 +56,46 @@
 		color: var(--white-color);
 	}
 }
+
+@include tablet {
+	.special {
+		&__decor {
+			display: none;
+		}
+	}
+}
+
+@include tablet-small {
+	.special {
+		&__wrapper {
+			padding-top: 60px;
+			padding-bottom: 48px;
+			margin-left: -16px;
+			margin-right: -16px;
+			width: calc(100% + 32px);
+		}
+	}
+}
+
+@include mobile {
+	.special {
+		.heading {
+			margin-bottom: 32px;
+		}
+		.form {
+			max-width: 100%;
+			.form-group {
+				width: 100%;
+			}
+			.btn-second {
+				width: 100%;
+				margin-left: 0;
+				margin-bottom: 16px;
+			}
+		}
+		&__info {
+			margin-top: 28px;
+			text-align: center;
+		}
+	}
+}
