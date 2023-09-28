@@ -38,7 +38,7 @@
     margin-bottom: 24px;
     position: relative;
     font-family: var(--font-daysone);
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 400;
     line-height: 1;
     text-transform: uppercase;
@@ -64,5 +64,45 @@
     line-height: 1.2;
     text-align: center;
     color: var(--font-color);
+  }
+}
+
+@include tablet {
+  .steps {
+    padding-top: 68px;
+    padding-bottom: 68px;
+  }
+}
+
+@include tablet-small {
+  .steps {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 40px;
+      width: 100%;
+      .steps-item {
+        &:not(:last-child) .steps-number::after {
+          top: 50%;
+          left: 37px;
+          width: 0;
+          height: 100px;
+        }
+      }
+    }
+    &-item {
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      text-align: left;
+    }
+    &-number {
+      margin-bottom: 0;
+      margin-right: 24px;
+    }
+    &-text {
+      text-align: left;
+    }
   }
 }

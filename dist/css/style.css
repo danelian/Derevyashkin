@@ -2948,7 +2948,7 @@ th {
   margin-bottom: 24px;
   position: relative;
   font-family: var(--font-daysone);
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 400;
   line-height: 1;
   text-transform: uppercase;
@@ -2977,6 +2977,42 @@ th {
   color: var(--font-color);
 }
 
+@media screen and (max-width: 1024px) {
+  .steps {
+    padding-top: 68px;
+    padding-bottom: 68px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .steps {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .steps__list {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+    width: 100%;
+  }
+  .steps__list .steps-item:not(:last-child) .steps-number::after {
+    top: 50%;
+    left: 37px;
+    width: 0;
+    height: 100px;
+  }
+  .steps-item {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  .steps-number {
+    margin-bottom: 0;
+    margin-right: 24px;
+  }
+  .steps-text {
+    text-align: left;
+  }
+}
 .gallerySwiper {
   overflow: visible;
 }
