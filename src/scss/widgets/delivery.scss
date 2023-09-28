@@ -73,3 +73,45 @@
     }
   }
 }
+
+@include desktop {
+  .delivery {
+    &__info {
+      font-size: 16px;
+    }
+    &__list {
+      grid-template-rows: none;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-flow: row;
+      column-gap: 24px;
+      padding: 28px 24px 36px 24px;
+      &::before {
+        display: none;
+      }
+      li {
+        padding: 8px 0;
+      }
+    }
+  }
+}
+
+@include tablet-small {
+  .delivery {
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 28px 24px 36px 24px;
+    }
+  }
+}
+
+@include mobile {
+  .delivery {
+    &__wrapper {
+      border: 0;
+    }
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 16px 12px 0 12px;
+    }
+  }
+}
