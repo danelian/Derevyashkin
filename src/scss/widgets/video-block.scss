@@ -5,6 +5,7 @@
   position: relative;
   margin: auto;
   width: 880px;
+  max-width: 100%;
   aspect-ratio: 88 / 47;
   img {
     width: 100%;
@@ -23,5 +24,19 @@
     height: 70px;
     background-image: url('../img/icon_play.svg');
     z-index: 2;
+  }
+}
+
+@include mobile {
+  .video-item {
+    width: 100%;
+    aspect-ratio: 36 / 46;
+    img {
+      aspect-ratio: 36 / 46;
+    }
+    &::before {
+      width: 44px;
+      height: 44px;
+    }
   }
 }
