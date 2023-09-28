@@ -35,17 +35,9 @@
 	width: fit-content;
 	padding: 16px 44px;
 	border-radius: 20px;
-	// border: 1px solid transparent;
 	overflow: hidden;
 	background: var(--green-gradient);
 	transition: all .3s ease;
-	// &:hover {
-	// 	border-color: var(--global-color);
-	// 	background: var(--white-color);
-	// 	&::before, &::after {
-	// 		border-color: var(--global-color);
-	// 	}
-	// }
 	&::before,
 	&::after {
 		content: '';
@@ -55,7 +47,6 @@
 		width: 24px;
 		height: 24px;
 		border-radius: 50px;
-		// border: 1px solid var(--white-color);
 		background: var(--white-color);
 	}
 	&::before {
@@ -110,5 +101,18 @@
 		align-items: flex-start;
 		justify-content: flex-start;
 		flex-wrap: wrap;
+	}
+}
+
+@include mobile {
+	.tick {
+		padding: 16px 32px;
+		border-radius: 15px;
+		&-title {
+			font-size: 16px;
+		}
+		&-phone {
+			font-size: 21px;
+		}
 	}
 }

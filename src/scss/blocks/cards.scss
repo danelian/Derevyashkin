@@ -152,6 +152,20 @@
 	overflow: hidden;
 	box-shadow: 0px 0px 20px 0px rgba(132, 132, 132, 0.15);
 	z-index: 0;
+	&:hover {
+		.servicecard-btn-icon {
+			background-color: var(--global-color);
+			svg path {
+				fill: var(--white-color);
+			}
+		}
+		.servicecard-btn {
+			color: var(--brown-color);
+			&:before {
+				transform: translateX(3px);
+			}
+		}
+	}
 	&-info {
 		display: flex;
 		flex-direction: column;
@@ -216,12 +230,6 @@
 		border: 1px solid var(--brown-color);
 		border-radius: 50px;
 		background-color: transparent;
-		&:hover {
-			color: var(--brown-color);
-			&:before {
-				transform: translateX(3px);
-			}
-		}
 		&:before {
 			content: '';
 			position: absolute;
@@ -248,13 +256,6 @@
 		border-radius: 50px;
 		background-color: transparent;
 		transition: all .3s ease;
-		&:hover {
-			background-color: var(--global-color);
-			// transform: scale(1.1);
-			svg path {
-				fill: var(--white-color);
-			}
-		}
 	}
 }
 
@@ -287,6 +288,33 @@
 			}
 		}
 	}
+	.servicecard {
+		padding: 32px;
+		&-info {
+			min-height: 160px;
+		}
+		&-title {
+			font-size: 22px;
+		}
+		&-text {
+			font-size: 17px;
+		}
+		&-price {
+			font-size: 18px;
+		}
+		&-btn {
+			font-size: 13px;
+			min-height: 34px;
+			padding: 7px 38px 7px 14px;
+			&:before {
+				right: 14px;
+				top: 50%;
+				margin-top: -8px;
+				width: 16px;
+				height: 16px;
+			}
+		}
+	}
 }
 
 @include tablet-small {
@@ -306,6 +334,25 @@
 				font-size: 12px;
 				min-height: 28px;
 			}
+		}
+	}
+	.servicecard {
+		padding: 24px;
+		&-info {
+			min-height: 132px;
+		}
+		&-title {
+			font-size: 19px;
+		}
+		&-text {
+			font-size: 12px;
+		}
+		&-price {
+			font-size: 16px;
+		}
+		&-btn {
+			font-size: 12px;
+			min-height: 28px;
 		}
 	}
 }
