@@ -1752,6 +1752,50 @@ th {
   border-radius: 0 0 20px 0;
 }
 
+.modals {
+  padding: 56px 80px;
+  border-radius: 20px;
+  background: var(--green-gradient);
+}
+.modals .heading {
+  margin-bottom: 0;
+}
+.modals .heading .section-title {
+  text-align: left;
+  text-transform: none;
+  color: var(--white-color);
+}
+.modals .heading:not(:last-child) {
+  margin-bottom: 32px;
+}
+.modals .section-text {
+  max-width: 360px;
+  text-align: left;
+  color: var(--white-color);
+}
+.modals .form {
+  max-width: 700px;
+}
+.modals .form .form-group:nth-child(1) {
+  width: 100%;
+}
+.modals .form .form-group:nth-child(2), .modals .form .form-group:nth-child(3) {
+  width: calc(50% - 120px);
+  margin-right: 20px;
+}
+.modals .form .form-input,
+.modals .form textarea {
+  color: var(--white-color);
+  background: rgba(255, 255, 255, 0.2);
+}
+.modals .form .btn-second {
+  width: 200px;
+}
+.modals .fancybox-close-small {
+  padding: 8px;
+  color: var(--white-color) !important;
+}
+
 /***** SECTIONS GLOBAL (Widgets) *****/
 .hero {
   position: relative;
