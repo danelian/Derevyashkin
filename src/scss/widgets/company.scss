@@ -58,6 +58,7 @@
 			width: 505px;
 			height: 323px;
 			background-image: url('../img/companybl_decor_img.png');
+      background-size: contain;
 			z-index: 0;
 		}
     &__wrapper {
@@ -69,6 +70,9 @@
     }
     .heading {
       margin-bottom: 44px;
+    }
+    .link-green {
+      margin-top: 20px;
     }
     &__container {
       display: flex;
@@ -84,12 +88,125 @@
           p:nth-child(1) {
             margin-top: 0;
           }
-          .link-green {
-            margin-top: 20px;
-          }
         }
         &:nth-child(2) {
           width: 38%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1539px) {
+  .company {
+    &bl {
+      &::before {
+        width: 320px;
+        height: 205px;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .company {
+    &bl {
+      &__wrapper {
+        margin: 0 auto;
+        padding: 36px 36px 60px 36px;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .company {
+    &__main {
+      width: calc(100% + 32px);
+      margin-left: -16px;
+      margin-right: -16px;
+      padding: 88px 32px 68px 32px;
+      border-radius: 0;
+      &:not(:last-child) {
+        margin-bottom: 60px;
+      }
+      &::before {
+        top: -40px;
+        bottom: auto;
+        right: -40px;
+        width: 230px;
+        height: 230px;
+      }
+      .section-title {
+        font-size: 28px;
+      }
+    }
+    &__container {
+      padding: 0 20px;
+      .col {
+        p {
+          font-size: 16px;
+        }
+        &:nth-child(1) {
+          width: 60%;
+          p:nth-child(1) {
+            margin-top: 0;
+          }
+        }
+        &:nth-child(2) {
+          width: 30%;
+        }
+      }
+    }
+    &bl {
+      &::before {
+        display: none;
+      }
+      &__wrapper {
+        padding: 36px 24px 40px 24px;
+      }
+      .heading {
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
+
+@include tablet-small {
+  .company {
+    &__container {
+      flex-direction: column;
+      .col {
+        p {
+          font-size: 15px;
+        }
+        &:nth-child(1) {
+          width: 100%;
+          margin-bottom: 12px;
+        }
+        &:nth-child(2) {
+          width: 100%;
+        }
+      }
+    }
+    &bl {
+      .heading .section-title {
+        text-align: left;
+      }
+      &__container {
+        justify-content: space-between;
+        flex-direction: column;
+        .col {
+          p {
+            font-size: 15px;
+          }
+          &:nth-child(1) {
+            width: 100%;
+            margin-bottom: 12px;
+          }
+          &:nth-child(2) {
+            width: 100%;
+          }
         }
       }
     }
