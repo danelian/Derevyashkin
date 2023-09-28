@@ -62,3 +62,43 @@
 .ymaps-2-1-79-inner-panes {
   border-radius: 20px;
 }
+
+@include tablet {
+  .contacts {
+    &__list {
+      max-width: 100%;
+      .contact-item {
+        margin-bottom: 28px;
+        width: calc(50% - 20px);
+        &:nth-child(odd) {
+          margin-right: 40px;
+        }
+      }
+    }
+  }
+  .contact-item {
+    &__contact {
+      font-size: 18px;
+    }
+    &__info {
+      font-size: 15px;
+    }
+  }
+}
+
+@include tablet-small {
+  .contacts {
+    &__list {
+      .contact-item {
+        margin-bottom: 24px;
+        width: 100%;
+        &:nth-child(odd) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .map {
+    height: 380px;
+  }
+}

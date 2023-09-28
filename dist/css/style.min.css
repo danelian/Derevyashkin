@@ -2728,7 +2728,7 @@ th {
     font-size: 28px;
   }
   .company__container {
-    padding: 0 20px;
+    padding: 0;
   }
   .company__container .col p {
     font-size: 16px;
@@ -2848,6 +2848,36 @@ th {
   border-radius: 20px;
 }
 
+@media screen and (max-width: 1024px) {
+  .contacts__list {
+    max-width: 100%;
+  }
+  .contacts__list .contact-item {
+    margin-bottom: 28px;
+    width: calc(50% - 20px);
+  }
+  .contacts__list .contact-item:nth-child(odd) {
+    margin-right: 40px;
+  }
+  .contact-item__contact {
+    font-size: 18px;
+  }
+  .contact-item__info {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contacts__list .contact-item {
+    margin-bottom: 24px;
+    width: 100%;
+  }
+  .contacts__list .contact-item:nth-child(odd) {
+    margin-right: 0;
+  }
+  .map {
+    height: 380px;
+  }
+}
 .cta__wrapper {
   display: flex;
   padding: 68px;
